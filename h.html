@@ -1,87 +1,172 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>il Post</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="s.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>il Post</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="s.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-  <nav class="barrasticky">
+<nav class="barrasticky">
     <ul>
-      <li><a>Podcast</a></li>
-      <li><a>Newsletter</a></li>
-      <li><a>Shop</a></li>
+        <li>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbttn">
+                <i class="fas fa-bars"></i>
+            </label>
+        </li>
+        <li><a>Podcast</a></li>
+        <li><a>Newsletter</a></li>
+        <li><a>Shop</a></li>
     </ul>
     <ul>
-      <li><a>Regala</a></li>
-      <li><a>Abbonati</a></li>
+        <li><a>Regala</a></li>
+        <li><a id="abbonati">Abbonati</a></li>
+        <li><a><img src="imgs/ulogo.png"></a></li>
     </ul>
-  </nav>
-  <section id="titolo">
+</nav>
+<section>
     <header>
-      <img src="https://www.ilpost.it/wp-content/themes/ilpost_2018/images/ilpost.svg?x66086" id="logo">
-      <nav id="barra">
-        <ul id="contenuto barra">
-          <li><a>ITALIA</a></li>
-          <li><a>MONDO</a></li>
-          <li><a>POLITICA</a></li>
-          <li><a>TECNOLOGIA</a></li>
-          <li><a>INTERNET</a></li>
-          <li><a>SCIENZA</a></li>
-          <li><a>CULTURA</a></li>
-          <li><a>ECONOMIA</a></li>
-          <li><a>EUROPA</a></li>
-          <li><a>SPORT</a></li>
-          <li><a>MEDIA</a></li>
-          <li><a>MODA</a></li>
-          <li><a>LIBRI</a></li>
-          <li><a>CONSUMISMI</a></li>
-          <li><a>STORIE/IDEE</a></li>
-        </ul>
-        <a href="https://twitter.com/ilpost" class="twitter-button"><img src="imgs/twlogo.jpg">Segui @ilpost</a>
-        <a href="https://www.facebook.com/ilpost/" class="facebook-button" target="_blank"><img src="imgs/flogo.webp">Mi piace</a>
-        <a href="https://www.instagram.com/il_post/" class="instagram-button" target="_blank"><img src="imgs/ilogo.webp">Segui @il_post</a>
-        <a href="https://t.me/ilpost_official" class="telegram-button" target="_blank"><img src="imgs/tlogo.avif">@ilpost_official</a>
-        <div class="search-box">
-          <input type="text" placeholder="CERCA...">
+        <div>
+            <img src="https://www.ilpost.it/wp-content/themes/ilpost_2018/images/ilpost.svg?x66086" id="logo">
         </div>
-      </nav>
+        <nav id="barra">
+            <ul>
+                <li><a>ITALIA</a></li>
+                <li><a>MONDO</a></li>
+                <li><a>POLITICA</a></li>
+                <li><a>TECNOLOGIA</a></li>
+                <li><a>INTERNET</a></li>
+                <li><a>SCIENZA</a></li>
+                <li><a>CULTURA</a></li>
+                <li><a>ECONOMIA</a></li>
+                <li><a>EUROPA</a></li>
+                <li><a>SPORT</a></li>
+                <li><a>MEDIA</a></li>
+                <li><a>MODA</a></li>
+                <li><a>LIBRI</a></li>
+                <li><a>CONSUMISMI</a></li>
+                <li><a>STORIE/IDEE</a></li>
+            </ul>
+            <a href="https://twitter.com/ilpost" class="twitter-button"><img src="imgs/twlogo.jpg">Segui @ilpost</a>
+            <a href="https://www.facebook.com/ilpost/" class="facebook-button" target="_blank"><img
+                    src="imgs/flogo.webp">Mi piace</a>
+            <a href="https://www.instagram.com/il_post/" class="instagram-button" target="_blank"><img
+                    src="imgs/ilogo.webp">Segui @il_post</a>
+            <a href="https://t.me/ilpost_official" class="telegram-button" target="_blank"><img src="imgs/tlogo.avif">@ilpost_official</a>
+            <div class="search-box">
+                <input type="text" placeholder="CERCA..">
+            </div>
+        </nav>
     </header>
-  </section>
+</section>
 <main>
-  <section class="featured">
-    <h1>Primo piano</h1>
-    <img src="">
-    <p>descrizione</p>
-    <a href="">leggi tutto...</a>
-  </section>
-  <section class="category">
-    <h2>Secondo piano</h2>
-    <ul>
-      <li>
-        <img src="">
-        <h3>titolo articolo 0</h3>
-        <p>descrizione</p>
-        <a href="">leggi tutto...</a>
-      </li>
-      <li>
-        <img src="">
-        <h3>titolo articolo 1</h3>
-        <p>descrizione</p>
-        <a href="">leggi tutto...</a>
-      </li>
-      <li>
-        <img src="">
-        <h3>titolo articolo 2</h3>
-        <p>descrizione</p>
-        <a href="">leggi tutto...</a>
-      </li>
-    </ul>
-  </section>
+    <section class="firstSection">
+        <article class="featuredNews">
+            <div>Il Chiava tenta l'evoluzione, video scioccante</div>
+            <div>Ubriachi l'ultimo giorno di università</div>
+            <div>Armino il nano che armava i nani, chi era?</div>
+        </article>
+        <article class="featuredArticle">
+            <img src="imgs/trump.webp" style="width: 96%">
+            <h1>Le accuse contro Trump, spiegate</h1>
+            <p>I 34 capi d'imputazione si riferiscono a un solo tipo di reato, compiuto in diverse occasioni: la falsificazione dei bilanci della sua società per coprire presunti pagamenti illeciti</p>
+        </article>
+        <article class="secondaryNews">
+            <img src="/imgs/quad.webp"
+                 width="25%">
+            <div>
+                <h1>Il “cappello” a un annoso problema matematico</h1>
+                <p>Sembra sia stato infine scoperto un "einstein", cioè una forma che può ricoprire una superficie infinita senza mai ripetere lo stesso motivo</p>
+                <a href="">Leggi tutto</a>
+            </div>
+        </article>
+        <article class="secondaryNews">
+            <img src="/imgs/nave.webp"
+                 width="25%">
+            <div>
+                <h1>Intorno alla Nave</h1>
+                <p>Quella nuova si è appena costituita: è l'organo collegiale del parlamento che sorveglia sull'attività della televisione pubblica</p>
+                <a href="">Leggi tutto</a>
+            </div>
+        </article>
+        <article class="quotes">
+            <div><span>VIRGOLETTE</span></div>
+            <div>«Il mio pensiero è che era una sgrammaticatura istituzionale»</div>
+            <div>Giorgia Meloni sulla contestata e falsa ricostruzione storica dell'attentato di via Rasella fatta dal presidente del Senato, Ignazio La Russa</div>
+        </article>
+        <article class="secondaryNews">
+            <img src="/imgs/rai.webp"
+                 width="25%">
+            <div>
+                <h1>Cosa fa la commissione di vigilanza Rai</h1>
+                <p>Una diretta con Luca Misculin e Francesco Costa, per abbonate e abbonati: per parlare dei 12 giorni a bordo della nave Geo Barents e del progetto giornalistico dietro al podcast</p>
+                <a href="">Leggi tutto</a>
+            </div>
+        </article>
+
+    </section>
+    <section class="secondSection">
+        <div id="peanuts">
+            <div>PEANUTS</div>
+            <img src="/imgs/pa01.jpg">
+        </div>
+        <section class="news">
+            <div id="news">+NEWS</div>
+            <ul id="ulnews">
+                <li> I risultati della 28ª giornata di Serie A</li>
+                <li> I sorteggi dei quarti di Champions League per le italiane</li>
+                <li> Le avversarie di Juventus e Roma ai quarti di finale di Europa League</li>
+                <li> Gli spot trasmessi durante il Super Bowl</li>
+            </ul>
+        </section>
+        <section id="todaysphoto">
+            <img src="imgs/tokyo.jpg">
+            <div>Le foto di oggi</div>
+            <span>Martedì 4 Aprile</span>
+        </section>
+        <section id="flashnews">
+            <img src="imgs/flash.svg">
+        </section>
+        <section id="container">
+        <article class="secondaryNews" style="padding-inline: 4%">
+            <div>
+                <p>Sumer Mario Bros- il film è appena uscito</p>
+                <a href="">Leggi tutto</a>
+            </div>
+            <img src="imgs/sm.jpg" style="height: auto" width="50%" >
+        </article>
+        <article class="secondaryNews" style="padding-inline: 4%">
+            <div>
+                <p>Insulti razzisti a Lukaku e l'esultanza che gli è costata l'espulsione</p>
+                <a href="">Leggi tutto</a>
+            </div>
+            <img src="imgs/luk.webp" style="height: auto" width="50%" >
+        </article><article class="secondaryNews" style="padding-inline: 4%">
+        <div>
+            <p>La foto e il fotomontaggio della segretaria di Stato francese</p>
+            <a href="">Leggi tutto</a>
+        </div>
+        <img src="imgs/hoe.webp" style="height: auto" width="50%" >
+    </article>
+        <article class="secondaryNews" style="padding-inline: 4%">
+            <div>
+                <p>Il nuovo trailer dell'atteso film di greta Gerwig su Barbie</p>
+                <a href="">Leggi tutto</a>
+            </div>
+            <img src="imgs/greta.webp" style="height: auto" width="50%" >
+        </article>
+        </section>
+    </section>
+    <section class="thirdSection">
+        <div>
+            BITS
+        </div>
+    </section>
 </main>
 </body>
 </html>

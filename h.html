@@ -14,7 +14,7 @@
 <div id="stickyimm">
     <img src="https://www.ilpost.it/wp-content/themes/ilpost_2018/images/ilpost.svg?x66086">
 </div>
-<nav class="barrasticky">
+<nav class="barrasticky" >
     <ul>
         <li>
             <input type="checkbox" id="check">
@@ -22,22 +22,57 @@
                 <i class="fas fa-bars"></i>
             </label>
         </li>
-        <li id="1"><a>Podcast</a></li>
-        <li id="2"><a>Newsletter</a></li>
-        <li id="3"><a>Shop</a></li>
+        <li><a>Podcast</a></li>
+        <li><a>Newsletter</a></li>
+        <li><a>Shop</a></li>
     </ul>
     <ul>
-        <li id="4"><a>Regala</a></li>
-        <li id="5"><a id="abbonati">Abbonati</a></li>
-        <li id="6"><a><img src="imgs/ulogo.png"></a></li>
+        <li><a>Regala</a></li>
+        <li><a id="abbonati">Abbonati</a></li>
+        <li><a><img src="imgs/ulogo.png"></a></li>
     </ul>
 </nav>
+
+<section class="wrapper">
+    <div class="sidebar">
+        <h4 id="home">HOME</h4>
+        <div>
+            <ul>
+                <li><a>Italia</a></li>
+                <li><a>Mondo</a></li>
+                <li><a>Politica</a></li>
+                <li><a>Tecnologia</a></li>
+                <li><a>Internet</a></li>
+                <li><a>Scienza</a></li>
+                <li><a>Cultura</a></li>
+                <li><a>Economia</a></li>
+                <li><a>Europa</a></li>
+                <li><a>Sport</a></li>
+                <li><a>Media</a></li>
+                <li><a>Moda</a></li>
+                <li><a>Libri</a></li>
+                <li><a>Consumismi</a></li>
+                <li><a>Storie/Idee</a></li>
+                <li><a>Ok Boomer!</a></li>
+            </ul>
+        </div>
+
+        <h5 id="podcast">PODCAST</h5>
+        <h5 id="newsl">NEWSLETTER</h5>
+        <h5 id="shop">SHOP</h5>
+        <h5 id="personalArea">AREA PERSONALE</h5>
+        <p>Entra</p>
+
+    </div>
+
+</section>
+<script src="j.js"></script>
 <section>
     <header>
         <div>
             <img src="https://www.ilpost.it/wp-content/themes/ilpost_2018/images/ilpost.svg?x66086" class="logo">
         </div>
-        <nav id="barra">
+        <nav class="barra">
             <ul>
                 <li><a>ITALIA</a></li>
                 <li><a>MONDO</a></li>
@@ -80,8 +115,9 @@
             <p>I 34 capi d'imputazione si riferiscono a un solo tipo di reato, compiuto in diverse occasioni: la falsificazione dei bilanci della sua società per coprire presunti pagamenti illeciti</p>
         </article>
         <article class="secondaryNews">
-            <img src="/imgs/quad.webp"
-                 width="25%">
+            <div>
+                <img src="/imgs/quad.webp">
+            </div>
             <div>
                 <h1>Il “cappello” a un annoso problema matematico</h1>
                 <p>Sembra sia stato infine scoperto un "einstein", cioè una forma che può ricoprire una superficie infinita senza mai ripetere lo stesso motivo</p>
@@ -89,8 +125,9 @@
             </div>
         </article>
         <article class="secondaryNews">
-            <img src="/imgs/nave.webp"
-                 width="25%">
+            <div>
+                <img src="/imgs/nave.webp">
+            </div>
             <div>
                 <h1>Intorno alla Nave</h1>
                 <p>Quella nuova si è appena costituita: è l'organo collegiale del parlamento che sorveglia sull'attività della televisione pubblica</p>
@@ -103,8 +140,9 @@
             <div>Giorgia Meloni sulla contestata e falsa ricostruzione storica dell'attentato di via Rasella fatta dal presidente del Senato, Ignazio La Russa</div>
         </article>
         <article class="secondaryNews">
-            <img src="/imgs/rai.webp"
-                 width="25%">
+            <div>
+                <img src="/imgs/rai.webp">
+            </div>
             <div>
                 <h1>Cosa fa la commissione di vigilanza Rai</h1>
                 <p>Una diretta con Luca Misculin e Francesco Costa, per abbonate e abbonati: per parlare dei 12 giorni a bordo della nave Geo Barents e del progetto giornalistico dietro al podcast</p>
@@ -138,30 +176,31 @@
         <section id="container">
         <article class="secondaryNews" style="padding-inline: 4%">
             <div>
-                <p>Sumer Mario Bros- il film è appena uscito</p>
+                <p>Super Mario Bros- il film è appena uscito</p>
                 <a href="">Leggi tutto</a>
             </div>
-            <img src="imgs/sm.jpg" style="height: auto" width="50%" >
+            <div><img src="imgs/sm.jpg"></div>
         </article>
-        <article class="secondaryNews" style="padding-inline: 4%">
+        <article class="secondaryNews">
             <div>
                 <p>Insulti razzisti a Lukaku e l'esultanza che gli è costata l'espulsione</p>
                 <a href="">Leggi tutto</a>
             </div>
-            <img src="imgs/luk.webp" style="height: auto" width="50%" >
-        </article><article class="secondaryNews" style="padding-inline: 4%">
+            <div><img src="imgs/luk.webp"></div>
+        </article><article class="secondaryNews">
         <div>
             <p>La foto e il fotomontaggio della segretaria di Stato francese</p>
             <a href="">Leggi tutto</a>
         </div>
-        <img src="imgs/hoe.webp" style="height: auto" width="50%" >
+        <div><img src="imgs/hoe.webp"></div>
     </article>
-        <article class="secondaryNews" style="padding-inline: 4%">
+        <article class="secondaryNews">
             <div>
                 <p>Il nuovo trailer dell'atteso film di greta Gerwig su Barbie</p>
                 <a href="">Leggi tutto</a>
             </div>
-            <img src="imgs/greta.webp" style="height: auto" width="50%" >
+            <div><img src="imgs/greta.webp"></div>
+
         </article>
         </section>
     </section>

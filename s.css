@@ -1,3 +1,6 @@
+*{
+    margin-left: 2px;
+}
 body {
     padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
@@ -21,6 +24,7 @@ main {
     padding-top: 20px;
     padding-bottom: 40px;
 }
+
 
 .firstSection {
     flex-basis: 55%;
@@ -63,7 +67,17 @@ main {
     background: white;
 }
 .secondaryNews h1, .secondaryNews p,.secondaryNews a{
-    margin: 0 4% 0 2%;
+    margin: 0 0 0 4%;
+}
+
+.secondaryNews div img{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.secondaryNews div{
+    object-fit: contain;
+    width: 100%;
 }
 
 .quotes{
@@ -109,7 +123,7 @@ main {
     padding-left: 10px;
 }
 
-nav ul {
+.barra ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -119,12 +133,12 @@ nav ul {
     border-bottom: 1px solid lightgray;
 }
 
-nav li {
+.barra li {
     margin: 0 3px;
     font-weight: bold;
 }
 
-nav a {
+.barra a {
     text-decoration: none;
 }
 
@@ -141,6 +155,12 @@ nav a {
 
 .barrasticky ul {
     border: none;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-bottom: 8px;
+    padding-top: 15px;
 }
 
 .barrasticky ul li a img {
@@ -148,9 +168,10 @@ nav a {
 }
 
 .search-box {
-    float: right;
+    display: flex;
     margin-right: 10px;
-    margin-bottom: 5px;
+    float: right;
+    margin-bottom: 6px;
 }
 
 .search-box input[type="text"] {
@@ -265,6 +286,7 @@ nav a {
     width: 5px;
     background: #009fc3;
 }
+
 #todaysphoto{
     margin-inline:4%;
     margin-bottom: 45px;
@@ -305,13 +327,6 @@ nav a {
     display: flex;
     flex-basis: 100%;
     justify-content: space-between;
-}
-.flashNews img{
-    width: 80%;
-}
-#container{
-    margin-inline: 4%;
-    background: lightgray;
 }
 #bits{
     background: #ba1213;
@@ -357,7 +372,7 @@ footer ul{
     z-index: 2;
     width: 120px;
 }
-@media screen and (max-width: 916px){
+@media screen and (max-width: 922px){
     footer p{
         display: none;
     }
@@ -366,7 +381,7 @@ footer ul{
         font-size: 15px;
     }
 }
-@media screen and (max-width: 795px){
+@media screen and (max-width: 861px){
     .twitter-button{
         display: none;
     }
@@ -391,8 +406,30 @@ footer ul{
     .secondSection{
         border-right: none;
     }
+    .sidebar{
+        width: 100%;
+        background: white;
+    }
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width:745px) {
+    .barra ul{
+        display: none;
+    }
+    section header div{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .barra{
+        display: flex;
+        flex-direction: column;
+    }
+    .search-box{
+        float: none;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 550px){
     #stickyimm img{
         display: flex;
         margin-top: 16px;
@@ -401,6 +438,12 @@ footer ul{
         display: none;
     }
     header{
+        display: none;
+    }
+    #container{
+        display: none;
+    }
+    #flashnews{
         display: none;
     }
 }
@@ -422,17 +465,116 @@ footer ul{
         flex-basis: 100%;
         padding-right: 0;
     }
-    .secondaryNews{
-        display: list-item;
-    }
-    .secondaryNews img{
-        width: 96%;
-        margin-inline: 2%;
-    }
     .secondSection{
         display: none;
     }
     footer ul{
         display: none;
     }
+    .secondaryNews{
+        display: list-item;
+        padding-right: 4%;
+    }
+    .secondaryNews div img{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.wrapper{
+    display: flex;
+    position: relative;
+    list-style: none;
+}
+.sidebar{
+    position: fixed;
+    height: 100%;
+    background: white;
+    z-index: 3;
+}
+.wrapper .sidebar div{
+    border-bottom: 1px solid lightgray;
+}
+.wrapper .sidebar div ul{
+    list-style: none;
+    background: white;
+    margin-left: 30px;
+
+    padding-right: 100px;
+}
+.wrapper .sidebar div ul li{
+    padding: 2px;
+}
+
+#home::before{
+    content: '';
+    display: inline-block;
+    margin-left: 35px;
+    margin-right: 15px;
+    height: 20px;
+    width: 20px;
+    background-image: url("imgs/world.svg");
+    background-size: contain;
+}
+#podcast{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 16px;
+}
+#podcast::before{
+    content: '';
+    display: inline-block;
+    margin-left: 35px;
+    margin-right: 15px;
+    height: 20px;
+    width: 20px;
+    background-image: url("imgs/podcast.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#newsl{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 16px;
+}
+#newsl::before{
+    content: '';
+    display: inline-block;
+    margin-left: 35px;
+    margin-right: 15px;
+    height: 20px;
+    width: 20px;
+    background-image: url("imgs/newsletter.svg");
+    background-size: contain;
+}
+#shop{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 16px;
+}
+#shop::before{
+    content: '';
+    display: inline-block;
+    margin-left: 35px;
+    margin-right: 15px;
+    height: 20px;
+    width: 20px;
+    background-image: url("imgs/shop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#personalArea{
+     padding-bottom: 16px;
+ }
+#personalArea::before{
+    content: '';
+    display: inline-block;
+    margin-left: 35px;
+    margin-right: 15px;
+    height: 20px;
+    width: 20px;
+    background-image: url("imgs/personal.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.sidebar p{
+    margin-top: -30px;
+    margin-left: 70px;
 }
